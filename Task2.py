@@ -15,5 +15,5 @@ list_out = [
     if list_in[i] > list_in[i - 1] or i == 0
 ]
 
-print(list_in)
-print(list_out)
+print(f'Исходный список\n{list_in}')
+print(f'Результат\n{list_out}')
