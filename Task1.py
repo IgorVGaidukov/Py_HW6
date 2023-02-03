@@ -5,3 +5,10 @@
 Для выполнения расчета для конкретных значений
 необходимо запускать скрипт с параметрами.
 """
+
+from sys import argv
+
+dcript_name, hours, salary_in_hour, bonus = argv
+
+salary = float(hours) * float(salary_in_hour) + float(bonus)
+print(f'Зарплата сотрудника = {salary:.2f}')

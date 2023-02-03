@@ -6,3 +6,14 @@
 Результат: [12, 44, 4, 10, 78, 123].
 Реализуйте с list comprehension
 """
+
+list_in = [12, 44, 4, 10, 78, 123]
+list_out = []
+
+list_out = [
+    list_in[i] for i in range(len(list_in))
+    if list_in[i] > list_in[i - 1] or i == 0
+]
+
+print(list_in)
+print(list_out)
